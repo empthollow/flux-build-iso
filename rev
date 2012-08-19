@@ -1,0 +1,14 @@
+#!/bin/bash
+
+revisioni=$(ls out | grep -o [0-9].[0-9][0-9] | grep -o [0-9][0-9] | tail -1)
+echo $revisioni
+((revisioni++))
+echo $revisioni
+if [ "$revisioni" < "10" ]; then
+	echo "lt"
+        revision=0$revisioni
+else
+	echo "gt"
+        revision=$revisioni
+fi
+echo $revision

@@ -1,0 +1,37 @@
+#!/bin/bash
+#
+# /etc/rc.local: Local multi-user startup script.
+#
+echo "1" > /proc/sys/dev/mac_hid/mouse_button_emulation
+echo "97" > /proc/sys/dev/mac_hid/mouse_button3_keycode
+echo "100" > /proc/sys/dev/mac_hid/mouse_button2_keycode
+
+# Check for correct battery identifier
+battery=$(ls /sys/class/power_supply | grep BAT)
+if [ -n $battery ]; then
+sed -i s/BAT/$battery/g /etc/skel/.conkyrc
+sed -i '41 s/^#//' /etc/skel/.conkyrc
+sed -i '42 s/^#//' /etc/skel/.conkyrc
+fi
+
+# set volume
+amixer set Master 90% unmute
+amixer set PCM 100% unmute
+
+# Create fstab, bookmarks and mount
+for dev in $(ls /dev/disk/by-label/ | grep -v Flux_Capacity) ; do
+	mkdir /media/$dev
+	echo "/dev/disk/by-label/$dev /media/$dev auto defaults,users,exec,rw 0 0" >> /etc/fstab
+	echo "file:///media/$dev $dev" >> /etc/skel/.gtk-bookmarks
+	echo "\${if_mounted /media/$dev}\${color gray}$dev\${color #707070}: \$color\${fs_used /media/$dev}/\${fs_size /media/$dev} 
+ \${color gray}Free\${color #707070}: \$color\${fs_free /media/$dev} \${fs_bar /media/$dev}\${endif}" >> /etc/skel/.conkyrc
+done
+mount -a
+
+# Adding user accounts and set passwords
+useradd -u 1000 -g users -G storage,floppy,optical,audio,video,network,games,wheel,disk -m flux -p ""
+echo root:root | chpasswd 
+sed -i '9,34 d' /etc/rc.local
+
+# Create database for locate
+updatedb &

@@ -1,0 +1,129 @@
+*pacman-key? no
+*move to batterymon
+*change gtk theme
+*diff theme for root - anewstartblood
+*lxappearasnce menu item
+*semi transparent cursor
+*terminal
+*hotkeys
+*dbus-launch bluefish
+*check daemons
+*pcmanfm default terminal
+set hostname
+*aterm opts
+*change desktop background
+*fluxbox style
+ICONS	
+ *midori
+ *dwb
+ *editors
+ *shutdown
+ *bluefish
+ *audio player
+ *mixer
+ *alsamixer
+ *config ntfs drives
+ *archive manager
+ *printer control center
+ *daemon dialog
+ *replace clamtk w/ viruskiller.png
+ *replace tree w/ image-viewer.png
+ *replace gftp
+ *replace browse windows network
+*mouse cursor not working 755 perms
+*replace batti
+*remove MM keys in keys file
+*fix volumeicon config file
+*fix transparency
+*fix apps file for aterm
+*custom midori config
+*fix permissions on ANewStart
+*capitolize hotkeys on title
+*move 'change theme' to 'change themes'
+*possible nostromo2 icons http://superdit.com/2010/12/29/28-nice-gnome-icon-themes-in-2010-mostly-black-and-white/
+*change icon theme
+*add icon files
+!multicpu conky via rc.local
+*batterymon not working
+*edit rc.local for sed -i
+*fix permissions on AwOken
+ICONS
+  *Browse windows network
+  *logout
+  *audio player
+  *file search
+  *printer control center
+*put mounts in conky
+*add home to midori
+*fix conky mounts
+*fix pcmanfm permissions
+*add sudo file manager in menu	
+*change root gtkrc-2.0
+*rc.local users to mounts
+*change theme
+*change rc.local conky syntax
+*deadbeef icon
+*add mounts label to conky
+*checkout bookmarks for pcmanfm
+-change to thunar
+*menu
+*packages.list
+-add to chromium
+*menu
+*packages.list
+*change to sakura
+*menu
+*packages.list
+-networkmanager
+*packages.list
+*rc.conf
+*polkit
+*fstartup
+*add gnome-keyring
+*languages
+*gnome-keyring
+*update polkit files in etc
+*  udisks2.filesystem-mount*
+*  add udisks2.modify-device
+*change toolbar to 16 height
+*add polkit agent in startup
+*add suspend
+  *packages.list
+  *menu
+  *icon gnome-session-suspend2
+  *syntax
+  *add suspend commmand
+*thunar custom search action
+*add thunar-volman
+*change run icon - syntax
+*fix gmixer/update repo
+*add gstreamer0.10-base-plugins
+
+*group sakura in apps file  
+*base-devel
+*yaourt
+*exec
+
+______________________
+
+Flux-utils
+flux2hd
+	custom packages.list
+	install fresh
+	grub accomodate windows
+	copy .conkyrc from running
+	copy overlay
+	adjust rc.local
+	fix escape char rc.local file mods
+*remove addjava from fluxutils
+*check addflash for pause
+*remove scrollbar from hotkeys
+
+_______________________________
+Web sIte
+
+*burning / dd
+*packages list
+label a disk
+hfsprogs
+
