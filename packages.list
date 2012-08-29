@@ -6,9 +6,7 @@ afpfs-ng
 alsa-oss
 alsa-utils
 arandr
-sakura
 avahi
-base-devel
 bluefish
 blueman
 catfish
@@ -38,6 +36,7 @@ fluxbox
 flux-utils-git
 freeglut
 fuse
+grub-bios
 galculator
 gamin
 gecko-mediaplayer
@@ -49,6 +48,7 @@ gnumeric
 gnu-netcat
 gparted
 gpm
+grub-bios
 grun
 gstreamer0.10-base-plugins
 gtk-engine-murrine
@@ -79,9 +79,11 @@ ntfs-3g
 ntfs-config
 ntfsprogs
 openssh
+os-prober
 p7zip
 parted
 pm-utils
+sakura
 thunar
 tumbler
 thunar-archive-plugin
@@ -150,4 +152,3 @@ xf86-video-v4l
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
-yaourt

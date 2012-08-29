@@ -1,4 +1,3 @@
-afpfs-ng
 clamtk
 ddcxinfo-arch
 dwb-hg
@@ -10,12 +9,9 @@ grun
 hfsprogs
 hwd
 libast
-libbsd
-mingetty
 ntfs-config
 perl-file-find-rule
 perl-number-compare
 perl-text-glob
 urlview
-volumeicon
 yad

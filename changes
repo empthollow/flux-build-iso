@@ -100,9 +100,8 @@ ICONS
 *add gstreamer0.10-base-plugins
 
 *group sakura in apps file  
-*base-devel
-*yaourt
 *exec
+
 
 ______________________
 
@@ -118,6 +117,7 @@ flux2hd
 *remove addjava from fluxutils
 *check addflash for pause
 *remove scrollbar from hotkeys
+*exec flag
 
 _______________________________
 Web sIte
