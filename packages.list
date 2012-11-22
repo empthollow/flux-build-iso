@@ -16,7 +16,6 @@ chntpw
 clamav
 clamtk
 conky
-consolekit
 cpio
 cups
 deadbeef
@@ -27,7 +26,7 @@ dvd+rw-tools
 dwb
 elinks
 epdfview
-esetroot
+feh
 ettercap
 faenza-icon-theme
 firefox
@@ -104,8 +103,8 @@ unrar
 unzip
 urlview
 volumeicon
-testing/networkmanager
-testing/network-manager-applet
+networkmanager
+network-manager-applet
 xfce4-notifyd
 gnome-keyring
 file-roller

@@ -6,7 +6,7 @@ echo "usage: makerepo [repolist.file] [repo/directory]"
 exit 0
 }
 
-test $1 != -h || syntax
+test "$1" != "-h" || syntax
 test "$1" != "--help" || syntax
 test "$1" != "help" || syntax
 
@@ -22,7 +22,13 @@ fi
 
 test -n $1 || $(echo "Specify repolist file" && exit &>2)
 test -n $2 || $(echo "Specify repo directory" && exit &>2)
-test -d $2 || mkdir -p $2
+if [ -d $2 ]; then
+	rm -r $2
+	mkdir -p $2
+else
+mkdir -p $2
+fi
+
 packlist=$(pwd)/$1
 cd $2
 

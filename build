@@ -24,7 +24,7 @@ make_basefs() {
     mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" init
 #    mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" -p "syslinux" create
     mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" -p "$(cat packages.list)" install
-    cp -r overlay/* "${work_dir}"/root-image/
+    cp -rd overlay/* "${work_dir}"/root-image/
     tar -czf work/root-image/etc/overlay.tar.gz overlay
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -r 'locale-gen' run
 }
