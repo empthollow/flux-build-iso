@@ -19,7 +19,7 @@
       [exec] (Terminal) {sakura} </usr/share/icons/AwOken/clear/24x24/apps/gnome-terminal.png>
       [exec]   (Midori) {midori} </usr/share/icons/AwOken/clear/24x24/apps/midori.png>
       [exec]   (DWB) {dwb} </usr/share/icons/AwOken/clear/24x24/apps/web-browser.png>
-      [exec]   (File Browser) {dbus-launch thunar} </usr/share/icons/AwOken/clear/24x24/apps/file-manager.png>
+      [exec]   (File Browser) {thunar} </usr/share/icons/AwOken/clear/24x24/apps/file-manager.png>
       [exec]   (Mail) {thunderbird} </usr/share/icons/AwOken/clear/24x24/apps/thunderbird.png>
       [exec]   (Run) {grun } </usr/share/icons/AwOken/clear/24x24/actions/gnome-run.png>
 	[exec]	(Edit Menu)	{medit ~/.fluxbox/menu} </usr/share/icons/AwOken/clear/24x24/apps/menu-editor.png>
@@ -40,7 +40,7 @@
 [end]
 [submenu] (Editors) </usr/share/icons/AwOken/clear/24x24/apps/text-editor.png>
       [exec]   (Medit) {medit} </usr/share/icons/AwOken/clear/24x24/apps/text-editor.png>
-      [exec]   (Bluefish) {dbus-launch bluefish} </usr/share/icons/AwOken/clear/24x24/apps/bluefish-icon.png>
+      [exec]   (Bluefish) {bluefish} </usr/share/icons/AwOken/clear/24x24/apps/bluefish-icon.png>
       [exec]   (Gvim) {gvim} </usr/share/icons/AwOken/clear/24x24/apps/vimlogo.png>
       [exec]   (Nano) {sakura -e nano} </usr/share/icons/AwOken/clear/24x24/apps/text-editor.png>
       [exec]   (Vim) {sakura -e vim} </usr/share/icons/AwOken/clear/24x24/apps/vim.png>
@@ -59,8 +59,8 @@
       [exec]   (ABIword Processing)  {abiword}  </usr/share/icons/AwOken/clear/24x24/apps/abiword.png>
 [end]
 [submenu] (System Tools) </usr/share/icons/AwOken/clear/24x24/categories/applications-other.png>
-      [exec]   (File Browser) {dbus-launch thunar} </usr/share/icons/AwOken/clear/24x24/apps/file-manager.png>
-      [exec]   (Root File Browser) {gksu dbus-launch pcmanfm} </usr/share/icons/AwOken/clear/24x24/apps/package-broken.png>
+      [exec]   (File Browser) {thunar} </usr/share/icons/AwOken/clear/24x24/apps/file-manager.png>
+      [exec]   (Root File Browser) {gksu thunar} </usr/share/icons/AwOken/clear/24x24/apps/package-broken.png>
       [exec]   (File Search) {catfish} </usr/share/icons/AwOken/clear/24x24/apps/catfish.png>
       [exec]   (Task Manager) {lxtask} </usr/share/icons/AwOken/clear/24x24/apps/utilities-system-monitor.png>
       [exec]   (Display Config) {arandr} </usr/share/icons/AwOken/clear/24x24/apps/display-capplet.png>
@@ -71,6 +71,7 @@
       [exec]   (Partition Editor) {gksudo gparted} </usr/share/icons/AwOken/clear/24x24/apps/gparted.png>
       [exec]   (Printer Control Center) {cupsadm} </usr/share/icons/AwOken/clear/24x24/apps/cups.png>
       [exec] (Daemon Dialog) {daemondialog} </usr/share/icons/AwOken/clear/24x24/actions/gtk-execute.png>
+      [exec] (Systemd Admin) {gksu systemadm} </usr/share/icons/AwOken/clear/24x24/categories/preferences-other.png> 
       [exec] (Add Adobe Flash Plugin) {sakura -e addflash} </usr/share/icons/AwOken/clear/24x24/actions/gtk-save.png>
 [end]
 [submenu] (fluxbox menu) </usr/share/icons/AwOken/clear/24x24/categories/preferences-desktop-personal.png>

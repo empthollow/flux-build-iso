@@ -11,5 +11,6 @@ ntfs-config
 perl-file-find-rule
 perl-number-compare
 perl-text-glob
+systemd-ui-git
 urlview
 yad

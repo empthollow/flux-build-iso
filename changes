@@ -1,17 +1,31 @@
-update daemons
-add systemadm
-add menu item systemadm
+*update daemons
+*add systemadm
+*add menu item systemadm
 *add user
-root passowrd
+*root passowrd
 *rc.local
-remove dbus-launch commands from menu
-add saleem's polkit rules
-
+*remove dbus-launch commands from menu
+*add saleem's polkit rules
+adjust themes
+update flux-utilities
+*edit startup
+*systemadm icon
+*dbus-launch fluxbox
+*volumeicon settings - gmixer
+*slim
+*thunar
+add conky for fchelp
+fchelp terminal
+fstab/conky partitions
+change pacman mirrorlist
+thunar permissions
+ctrl-alt-backspace
 ______________________
 
 Flux-utils
-update daemondialog
-update fchelp
+*update daemondialog
+*update fchelp
+*wallpaper setter .desktop file
 
 flux2hd
 	custom packages.list
@@ -21,6 +35,9 @@ flux2hd
 	copy overlay
 	adjust rc.local
 	fix escape char rc.local file mods
+	move locale question to top
+	error handling
+	check for swap update to parted
 *remove addjava from fluxutils
 *check addflash for pause
 *remove scrollbar from hotkeys
@@ -31,6 +48,7 @@ Web sIte
 
 *burning / dd
 *packages list
+installation
 label a disk
 hfsprogs
 downloads page

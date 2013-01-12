@@ -31,11 +31,12 @@ xset b 0
 # Change your keymap:
 # xmodmap "/home/empthollow/.Xmodmap"
 
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 volumeicon &
-ck-launch-session dbus-launch nm-applet &
+nm-applet &
 batterymon &
 conky &
+xcompmgr -f &
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.

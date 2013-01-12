@@ -9,7 +9,7 @@ else
 	revision=$revisioni
 fi
 iso_name=fluxcapacity
-iso_label="Flux_Capacity"
+iso_label="FluxCapacity"
 iso_version=6.$revision
 install_dir=fluxstall
 arch=$(uname -m)
@@ -49,7 +49,7 @@ pacman -Sy
         mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -r \
         'mkinitcpio \
             -c /etc/flux-mkinitcpio.conf \
-            -k $(pacman -Si linux | grep Version | grep -o [0-9].[0-9].[0-9]-[0-9])-ARCH \
+            -k $(pacman -Si linux | grep Version | cut -c 18-26)-ARCH \
             -g /boot/fluxiso.img' run
         cp ${work_dir}/root-image/boot/fluxiso.img ${work_dir}/iso/${install_dir}/boot/${arch}/
         cp ${work_dir}/root-image/boot/vmlinuz-linux ${work_dir}/iso/${install_dir}/boot/${arch}/vmlinuz
@@ -64,9 +64,12 @@ make_syslinux() {
         sed "s|%ARCHISO_LABEL%|${iso_label}|g;
             s|%INSTALL_DIR%|${install_dir}|g;
             s|%ARCH%|${arch}|g" ${script_path}/syslinux/syslinux.cfg > ${work_dir}/iso/${install_dir}/boot/syslinux/syslinux.cfg
-#        cp ${work_dir}/root-image/usr/lib/syslinux/menu.c32 ${work_dir}/iso/${install_dir}/boot/syslinux/
-	 cp -rf syslinux/* ${work_dir}/iso/${install_dir}/boot/syslinux/
-        : > ${work_dir}/build.${FUNCNAME}
+        cp ${work_dir}/root-image/usr/lib/syslinux/vesamenu.c32 ${work_dir}/iso/${install_dir}/boot/syslinux/
+	cp ${work_dir}/root-image/usr/lib/syslinux/reboot.c32 ${work_dir}/iso/${install_dir}/boot/syslinux/
+	cp syslinux/x86test ${work_dir}/iso/${install_dir}/boot/syslinux/
+	cp syslinux/memtest ${work_dir}/iso/${install_dir}/boot/syslinux/
+	cp syslinux/splash.png ${work_dir}/iso/${install_dir}/boot/syslinux/
+       : > ${work_dir}/build.${FUNCNAME}
     fi
 }
 
@@ -106,6 +109,8 @@ else
     verbose=""
 fi
 
+#echo $kernel
+#exit
 make_basefs
 make_setup_mkinitcpio
 make_boot
