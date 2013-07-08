@@ -19,29 +19,37 @@ fchelp terminal
 fstab/conky partitions
 change pacman mirrorlist
 thunar permissions
-ctrl-alt-backspace
+*ctrl-alt-backspace
+put packages.list in overlay
+xinitrc
+slim theme
 ______________________
 
 Flux-utils
 *update daemondialog
 *update fchelp
 *wallpaper setter .desktop file
-
 flux2hd
-	custom packages.list
-	install fresh
-	grub accomodate windows
+	*custom packages.list
+	change packages.list & remove generation
+	*install fresh
+	*grub accomodate windows
 	copy .conkyrc from running
-	copy overlay
-	adjust rc.local
-	fix escape char rc.local file mods
-	move locale question to top
-	error handling
+	*copy overlay
+	*adjust rc.local
+	*fix escape char rc.local file mods
+	*move locale question to top
+	*error handling
 	check for swap update to parted
+	*rc.local mod in filemods
+	daemondialog - add x11vnc
+	sudoers
+	check 64bit
 *remove addjava from fluxutils
 *check addflash for pause
 *remove scrollbar from hotkeys
 *exec flag
+
 
 _______________________________
 Web sIte
