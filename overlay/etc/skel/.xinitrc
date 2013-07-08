@@ -11,7 +11,6 @@ setxkbmap -option terminate:ctrl_alt_bksp
 # The following variable defines the session which is started if the user doesn't explicitly select a session
 # Source: http://svn.berlios.de/svnroot/repos/slim/trunk/xinitrc.sample
 
-DEFAULT_SESSION=Fluxbox
 
 case $1 in
 Fluxbox)
@@ -32,6 +31,6 @@ blackbox)
 	exec blackbox
 	;;
 *)
-	exec $DEFAULT_SESSION
+	exec 1=Fluxbox
 	;;
 esac
