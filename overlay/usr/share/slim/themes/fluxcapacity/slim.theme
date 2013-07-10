@@ -1,9 +1,9 @@
-e# Flower theme for slim
+# Flower theme for slim
 # Johannes Winkelmann, jw@tks6.net
 
 # Messages (ie: shutdown)
 msg_color               #000000
-msg_font                Verdana:size=16:bold:dpi=75
+msg_font                Sans:size=12:bold:dpi=75
 msg_shadow_xoffset 1
 msg_shadow_yoffset 1
 msg_shadow_color   #cccccc
@@ -19,12 +19,12 @@ input_name_y            65
 input_pass_x            146
 input_pass_y            111
 
-input_font          	Verdana:size=12:dpi=75
+input_font          	Sans:size=10
 input_color           #000000
 
 
 # Welcome message
-welcome_font          	Verdana:size=20:bold:dpi=75
+welcome_font          	Sans:size=16
 welcome_color          	#000000
 welcome_x              	15
 welcome_y              	25
@@ -35,7 +35,7 @@ welcome_shadow_color   #cccccc
 
 
 username_msg            Username
-username_font           Verdana:size=14:bold:dpi=75
+username_font           Sans:size=12
 username_color		#000000
 username_x              36
 username_y              65
@@ -46,3 +46,10 @@ username_y              65
 password_msg		Password
 password_x              36
 password_y              113
+
+#Color, Font, position for the session list
+session_color	#000000
+session_x	50%
+session_y	90%
+session_font	Sans:size=16
+

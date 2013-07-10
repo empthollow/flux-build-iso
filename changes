@@ -17,11 +17,11 @@ update flux-utilities
 add conky for fchelp
 fchelp terminal
 fstab/conky partitions
-change pacman mirrorlist
+*change pacman mirrorlist
 thunar permissions
 *ctrl-alt-backspace
-put packages.list in overlay
-xinitrc
+*put packages.list in overlay
+*xinitrc
 slim theme
 ______________________
 
