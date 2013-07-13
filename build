@@ -10,7 +10,7 @@ else
 fi
 iso_name=fluxcapacity
 iso_label="FluxCapacity"
-iso_version=6.$revision
+iso_version=7.$revision
 install_dir=fluxstall
 arch=$(uname -m)
 work_dir=work
@@ -31,12 +31,12 @@ run_once() {
 make_basefs() {
     mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" init
 #    mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" -p "syslinux" create
-<<<<<<< HEAD
+#<<<<<<< HEAD
     mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" -p "$(cat packages.list)" install
     cp packages.list overlay/etc
-=======
+#=======
 #    mkarchiso ${verbose} -C pacman.conf -w "${work_dir}" -D "${install_dir}" -p "$(cat packages.list)" install
->>>>>>> 17773d996cd1ca901ba44183b4e367bec81438b4
+#>>>>>>> 17773d996cd1ca901ba44183b4e367bec81438b4
     cp -rd overlay/* "${work_dir}"/root-image/
     tar -czf work/root-image/etc/overlay.tar.gz overlay
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -r 'locale-gen' run

@@ -1,0 +1,11 @@
+%DEPENDS%
+python2
+pygtk
+gstreamer0.10-python>=0.10.8
+python-xlib
+
+%MAKEDEPENDS%
+gettext
+pkgconfig
+intltool
+

@@ -1,0 +1,5 @@
+%DEPENDS%
+perl-text-glob
+perl-number-compare
+perl
+

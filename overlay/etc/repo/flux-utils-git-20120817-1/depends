@@ -1,0 +1,9 @@
+%DEPENDS%
+samba
+cups
+yad
+util-linux-ng
+
+%MAKEDEPENDS%
+git
+

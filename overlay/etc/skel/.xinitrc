@@ -13,7 +13,7 @@ setxkbmap -option terminate:ctrl_alt_bksp
 
 
 case $1 in
-Fluxbox)
+Fluxbox | * )
 	exec dbus-launch startfluxbox
 	;;
 Mate)
@@ -29,8 +29,5 @@ wmaker)
 	;;
 blackbox)
 	exec blackbox
-	;;
-*)
-	exec 1=Fluxbox
 	;;
 esac
