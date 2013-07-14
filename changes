@@ -1,54 +1,26 @@
-*update daemons
-*add systemadm
-*add menu item systemadm
-*add user
-*root passowrd
-*rc.local
-*remove dbus-launch commands from menu
-*add saleem's polkit rules
-adjust themes
+adjust theme
 update flux-utilities
-*edit startup
-*systemadm icon
-*dbus-launch fluxbox
-*volumeicon settings - gmixer
-*slim
-*thunar
 add conky for fchelp
-fchelp terminal
 fstab/conky partitions
-*change pacman mirrorlist
+change pacman mirrorlist
 thunar permissions
-*ctrl-alt-backspace
 *put packages.list in overlay
-*xinitrc
-*slim theme
+update hotkeys to work
 ______________________
 
-Flux-utils
-*update daemondialog
-*update fchelp
+===Flux-utils========
+update daemondialog
 *wallpaper setter .desktop file
 flux2hd
-	*custom packages.list
 	change packages.list & remove generation
 	*install fresh
 	*grub accomodate windows
 	copy .conkyrc from running
-	*copy overlay
-	*adjust rc.local
-	*fix escape char rc.local file mods
-	*move locale question to top
-	*error handling
 	check for swap update to parted
-	*rc.local mod in filemods
 	daemondialog - add x11vnc
 	sudoers
+	edit sudoers for install
 	check 64bit
-*remove addjava from fluxutils
-*check addflash for pause
-*remove scrollbar from hotkeys
-*exec flag
 
 
 _______________________________

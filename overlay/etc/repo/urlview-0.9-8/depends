@@ -1,7 +1,0 @@
-%DEPENDS%
-bash
-ncurses
-
-%MAKEDEPENDS%
-patch
-

@@ -19,7 +19,7 @@ amixer set Master 90% unmute
 amixer set PCM 100% unmute
 
 # Create fstab, bookmarks and mount
-for dev in $(ls /dev/disk/by-label/ | grep -v Flux_Capacity) ; do
+for dev in $(ls /dev/disk/by-label/ | grep -v FluxCapacity) ; do
 	mkdir /media/$dev
 	echo "/dev/disk/by-label/$dev /media/$dev auto defaults,users,exec,rw 0 0" >> /etc/fstab
 	echo "file:///media/$dev $dev" >> /etc/skel/.gtk-bookmarks

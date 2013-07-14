@@ -1,7 +1,0 @@
-%DEPENDS%
-bash
-pciutils
-usbutils
-ddcxinfo-arch
-wget
-

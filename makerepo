@@ -29,7 +29,7 @@ else
 mkdir -p $2
 fi
 
-packlist=$1
+packlist=$(pwd)/$1
 cd $2
 
 for i in $(cat $packlist); do

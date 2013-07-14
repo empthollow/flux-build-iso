@@ -1,7 +1,0 @@
-%DEPENDS%
-gtk2
-hicolor-icon-theme
-
-%MAKEDEPENDS%
-intltool
-
