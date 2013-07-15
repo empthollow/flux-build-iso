@@ -1,8 +1,8 @@
 adjust theme
 update flux-utilities
-add conky for fchelp
+*add conky for fchelp
 fstab/conky partitions
-change pacman mirrorlist
+*change pacman mirrorlist
 thunar permissions
 *put packages.list in overlay
 update hotkeys to work

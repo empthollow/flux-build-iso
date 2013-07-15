@@ -36,6 +36,7 @@ volumeicon &
 nm-applet &
 batterymon &
 conky &
+conky -c ~/.conkyfc &
 xcompmgr -f &
 
 # Applications you want to run with fluxbox.

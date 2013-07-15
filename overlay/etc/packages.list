@@ -110,6 +110,7 @@ x11vnc
 xfce4-notifyd
 gnome-keyring
 file-roller
+xcompmgr
 xorg-server
 xorg-xinit
 zip
